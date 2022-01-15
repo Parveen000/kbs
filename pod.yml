@@ -1,0 +1,15 @@
+Pod.yml
+apiVersion: v1
+kind: Pod
+metadata:
+    name: sample-pod
+    labels:
+       zone: prod
+       version: v1
+spec:
+   containers:
+   - name: sample-ctr
+     image: docker pull nginx
+     ports:
+     - containerPort: 80
+
