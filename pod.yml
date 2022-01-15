@@ -1,4 +1,3 @@
-Pod.yml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -9,7 +8,8 @@ metadata:
 spec:
    containers:
    - name: sample-ctr
-     image: docker pull nginx
+     image: devopstrainer/deploy:v1
      ports:
      - containerPort: 80
+
 
